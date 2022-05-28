@@ -1,0 +1,91 @@
+.header{
+    border-bottom: 1px solid #1E2D3D;
+    a{
+        color: var(--main-color);
+        font-size: 16px;
+        line-height: 1.18;
+    }
+    li{
+        list-style: none;
+    }
+    &__logo{
+        a{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight:  450;
+            padding: 0 22px;
+            height: 100%;
+        }
+    }
+    &__wrapper{
+        display: flex;
+    }
+    &__menu{
+        display: flex;
+        align-items: center;
+        flex-grow: 1;
+        margin: 0 auto;
+        max-width: 1160px;
+        &-list{
+            display: flex;
+            li{
+                border-right: 1px solid #1E2D3D;
+                &:first-child{
+                    border-left: 1px solid #1E2D3D;
+                }
+            }
+            a{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 18px 32px;
+                height: 100%;
+                position: relative;
+                &:after{
+                    content: '';
+                    position: absolute;
+                    bottom: 0;
+                    height: 3px;
+                    background-color: transparent;
+                    width: 0;
+                    transition: width 0.2s ease, background-color 0.2s ease;
+                }
+                &.current{
+                    
+                    &:after{
+                        content: '';
+                        position: absolute;
+                        bottom: 0;
+                        height: 3px;
+                        background-color: #FEA55F;
+                        width: 100%;
+                    }
+                }
+                &:hover:after{
+                    content: '';
+                    position: absolute;
+                    bottom: 0;
+                    height: 3px;
+                    background-color: #FEA55F;
+                    width: 100%;
+                    
+                }
+            }
+        }
+    }
+    &__contact{
+        &-wrapper{
+            height: 100%;
+            border-left: 1px solid #1E2D3D;
+            a{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 0 22px;
+                height: 100%;
+                
+            }
+        }
+    }
+}

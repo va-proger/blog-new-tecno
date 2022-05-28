@@ -1,0 +1,86 @@
+.footer{
+    margin-top: auto;
+    border-top: 1px solid #1E2D3D;
+    &__wrapper{
+        display: flex;
+        // align-items: center;
+        justify-content: space-between;
+    }
+    &__contact{
+        display: flex;
+        align-items: center;
+        &-desk{
+            font-weight: 450;
+            line-height: 1.19;
+            color: var(--main-color);
+            padding: 15px 22px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-right: 1px solid #1E2D3D;
+            align-content: stretch;
+        }
+        &-list{
+            display: flex;
+            align-items: center;
+            height: 100%;
+            align-content: stretch;
+            
+            li{
+                border-right: 1px solid #1E2D3D;
+                list-style: none;
+                display: flex;
+                align-items: center;
+                height: 100%;
+                a{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 0 14px;
+                    height: 100%;
+                    img{
+                        max-width: 24px;
+                        max-height: 24px;
+                        object-fit: contain;
+                        
+                    }
+                }
+                
+            }
+            li:first-child{
+                a{
+                    img{
+                        max-height: 16px;
+                    }
+                }
+            }
+        }
+    }
+    &__rep{
+        &-list{
+            display: flex;
+            align-items: center;
+            height: 100%;
+            li{
+                list-style: none;
+                height: 100%;
+                a{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-weight: 450;
+                    line-height: 1.19;
+                    color: var(--main-color);
+                    height: 100%;
+                    padding: 0 22px;
+                    border-left: 1px solid #1E2D3D;
+                    gap: 5px;
+                    img{
+                        max-width: 24px;
+                        max-height: 24px;
+                    }
+                }
+            }
+        }
+    }
+}

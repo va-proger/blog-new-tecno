@@ -1,0 +1,96 @@
+.front{
+    position: relative;
+    .container{
+        padding-top: 180px;
+        margin: 0 auto;
+        display: flex;
+        max-width: 1160px;
+        flex-grow: 1;
+    }
+    &__desk{
+        display: flex;
+        flex-direction: column;
+        &-top{
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 85px;
+        }
+        &-bottom{
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            .desk__link{
+                font-size: 16px;
+                line-height: 1.31;
+                font-weight: 500;
+                &-declaration{
+                    color: #4D5BCE;
+                }
+                &-variable{
+                    color: #43D9AD;
+                }
+                &-equally{
+                    color: #FFFFFF;
+                }
+                &-link{
+                    color: #E99287;
+                }
+            }
+        }
+        &-decoration{
+            color: var(--main-color);
+            font-weight: 450;
+            font-size: 16px;
+            line-height: 1.19;
+            
+        }
+        &-label{
+            color: #E5E9F0;
+            font-weight: 450;
+            font-size: 18px;
+            line-height: 1.22;
+            margin-bottom: 2px;
+        }
+        &-name{
+            font-weight: 400;
+            font-size: 62px;
+            line-height: 1.3;
+            color: #E5E9F0;
+        }
+        &-subtitle{
+            font-weight: 450;
+            font-size: 32px;
+            line-height: 1.18;
+            color: #4D5BCE;
+        }
+    }
+    &__project{
+      
+        
+    }
+    
+  
+    .green{
+        top: 53px;
+        right:  346px;
+        position: absolute;
+        width: 454px;
+        height: 492px;
+        background: #43D9AD;
+        opacity: 0.4;
+        filter: blur(174px);
+        transform: rotate(-94.3deg);
+    }
+    .blue{
+        top: 211px;
+        right:  91px;
+        display: block;
+        position: absolute;
+        width: 454px;
+        height: 492px;
+        background: #4D5BCE;
+        opacity: 0.4;
+        filter: blur(174px);
+        transform: rotate(13.51deg);
+    }
+}
